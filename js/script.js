@@ -63,6 +63,21 @@
   		]
 	});
 
+	const serviceItems = document.querySelectorAll('.service-item');
+
+    // Add a click event listener to each service item
+    serviceItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Add the hover effect class manually
+            item.classList.add('hover-effect');
+
+            // Optionally, you can remove the hover effect after some time
+            setTimeout(() => {
+                item.classList.remove('hover-effect');
+            }, 2000);  // Removes hover effect after 2 second
+        });
+    });
+
 
    $('.portfolio-gallery').each(function () {
         $(this).find('.popup-gallery').magnificPopup({

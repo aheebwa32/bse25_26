@@ -457,6 +457,16 @@ a:focus {
   color: #f75757;
 }
 
+.service-item:hover {
+  /* background-color: red; */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  color: red;
+}
+.service-item:hover h4 {
+  color: #330ddd; 
+}
+
 .dropdown-menu {
   visibility: hidden;
   filter: alpha(opacity=0);
